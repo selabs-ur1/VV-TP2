@@ -12,10 +12,3 @@ You may use [javaparser-starter](../code/javaparser-starter) as a starting point
 *This exercise grants bonus points.*
 
 **Additional Extra Bonus**: Make your application produce the dependency graph of all classes. The graph should be written using the [GraphViz DOT format](https://www.graphviz.org/)
-
-
-# Proposition to use the Doodle Project
-
-I must compute myself the TCC to see the results but the doodle has probably a good TCC apart from the Utils class (Which is obvious for Utils) and the Export facilities' retrieveUsers that could be mutualized for use in export and "getAllUserFromPoll" which is basically code duplication.
-
-Anyway the DOT Format Graph remains a good info to got and even if the TCC is good implement the tool is still relevant.
