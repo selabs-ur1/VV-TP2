@@ -27,14 +27,3 @@ The program should take as input the path to the source code of the project. It 
 Include in this repository the code of your application. Remove all unnecessary files like compiled binaries. See the [instructions](../subject.md) for suggestions on the projects to use.
 
 *Disclaimer* In a real project not all fields need to be accessed with a public getter.
-
-
-# Proposition to use the Doodle Project
-
-It seems that there is all the getter in the project, but remains particularly relevant to have an automatic verification of that for DTO objects (Warning : boolean getter start with 'is' is that normal that you don't mention that)
-
-In addition, I propose to make them compute other code analysis :
-
-- Large methods detection
-- Performance related ('.get(i)' on list that are not explicitly ArrayLists)
-- Verify visibility of attributes (ex : static package visibility in ExportResource.java)  
