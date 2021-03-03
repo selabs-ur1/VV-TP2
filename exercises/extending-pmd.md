@@ -17,9 +17,9 @@ if (...) {
 Notice that the nested `if`s may not be direct children of the outer `if`s. They may be written, for example, inside a `for` loop or any other statement.
 Write below the XML definition of your rule.
 
-You can find more information on extending PMD in the following link: https://pmd.github.io/pmd-6.28.0/pmd_userdocs_extending_writing_rules_intro.html
+You can find more information on extending PMD in the following link: https://pmd.github.io/latest/pmd_userdocs_extending_writing_rules_intro.html
 
-Use your rule with different projects and describe you findings below. See the [instructions](../subject.md) for suggestions on the projects to use.
+Use your rule with different projects and describe you findings below. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 ## Answer
 

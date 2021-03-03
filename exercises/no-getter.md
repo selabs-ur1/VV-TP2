@@ -24,6 +24,6 @@ class Person {
 
 The program should take as input the path to the source code of the project. It should produce a report in the format of your choice (TXT, CSV, Markdown, HTML, etc.) that lists for each detected field: its name, the name of the declaring class and the package of the declaring class.
 
-Include in this repository the code of your application. Remove all unnecessary files like compiled binaries. See the [instructions](../subject.md) for suggestions on the projects to use.
+Include in this repository the code of your application. Remove all unnecessary files like compiled binaries. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 *Disclaimer* In a real project not all fields need to be accessed with a public getter.
