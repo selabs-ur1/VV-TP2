@@ -28,3 +28,6 @@ PublicElementsPrinter.java:44:       ControlStatementBraces: This statement shou
 
 ### True positive : 
 All Main.java warnings are true positive
+
+## Commons Math
+Running PMD on Commons Math return 2941 lines of warnings : [analyse_commons_math.txt](https://github.com/Guitayk/VV-TP2/files/6149598/analyse_commons_math.txt)
