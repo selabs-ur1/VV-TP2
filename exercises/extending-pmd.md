@@ -22,4 +22,26 @@ You can find more information on extending PMD in the following link: https://pm
 Use your rule with different projects and describe you findings below. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 ## Answer
+```xml
+<rule name="3IfOrMore"
+      language="java"
+      message="3 or more imbricated ifs detected"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   <description>
 
+   </description>
+   <priority>4</priority>
+   <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath">
+         <value>
+<![CDATA[
+.//IfStatement[count(ancestor::IfStatement)>=2 and count(descendant::IfStatement)=0]
+]]>
+         </value>
+      </property>
+   </properties>
+</rule>
+```
+
+For exemple, commons-math contains 243 imbrications of 3 or more if statement : [3IfMore_in_commons-math.txt](https://github.com/Guitayk/VV-TP2/files/6150131/3IfMore_in_commons-math.txt)
