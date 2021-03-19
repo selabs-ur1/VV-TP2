@@ -4,3 +4,25 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 ## Answer
 
+*TCC* and *LCC* metrics produce the same value when there is no indirect connections between methods in the class.
+Here is a java class with that criteria :
+```
+public class NoIndirectConnection {
+	
+	public int attribute;
+	
+	public int getAttribute() {
+		return attribute;
+	}
+	
+	public void setAttribute(int newAttribute) {
+		attribute = newAttribute;
+	}
+
+	public void toString() {
+		return "A class with no indeirect connection.";
+	}
+
+}
+
+```

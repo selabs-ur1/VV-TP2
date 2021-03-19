@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="My custom rules"
+            xmlns="https://pmd.sf.net/ruleset/1.0.0"
+            xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://pmd.sf.net/ruleset/1.0.0 https://pmd.sf.net/ruleset_xml_schema.xsd"
+            xsi:noNamespaceSchemaLocation="https://pmd.sf.net/ruleset_xml_schema.xsd">
+<rule name="NestedIf"
+      language="java"
+      message="use of three or more nested if statements"
+      class="net.sourceforge.pmd.lang.rule.XPathRule">
+   <description>
+
+   </description>
+   <priority>3</priority>
+   <properties>
+      <property name="version" value="2.0"/>
+      <property name="xpath">
+         <value>
+<![CDATA[
+//IfStatement//IfStatement//IfStatement[//Block]
+
+ 
+]]>
+         </value>
+      </property>
+   </properties>
+</rule>
+</ruleset>
