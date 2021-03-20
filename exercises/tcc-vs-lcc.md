@@ -4,3 +4,20 @@ Explain under which circumstances *Tight Class Cohesion* (TCC) and *Loose Class 
 
 ## Answer
 
+If there is only direct connections, TCC and LCC metrics will produce the same value.
+
+```Java
+    class A {
+        B b = new B()
+        public getA() { b.getB()}
+    }
+
+    class B {
+        A a = new A()
+        public getB() { a.getA()}
+    }
+```
+
+TCC = NDC/NP
+LCC = (NDC+NIC)/NP
+So : TCC <= LCC
